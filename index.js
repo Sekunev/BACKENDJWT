@@ -83,6 +83,7 @@ app.all("/", (req, res) => {
   res.send({
     error: false,
     message: "Welcome to User API",
+    docs: "/docs/swagger",
     user: req.user,
   });
 });
